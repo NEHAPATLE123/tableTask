@@ -1,0 +1,33 @@
+
+<h1 class="bg-primary text-center">Table Task</h1>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Role</th>
+            <th>Age</th>
+            <th>MatchesPlayed</th>
+            <th>TotalRuns</th>
+          </tr>
+        </thead>
+
+        <tbody >
+          <tr *ngFor="let std of array; index as i">
+            <td>{{i + 1}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.country}} </td>
+            <td>{{std.role}} </td>
+            <td>{{std.age}} </td>
+            <td>{{std.matchesPlayed}} </td>
+            <td>{{std.totalRuns}} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
